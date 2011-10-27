@@ -42,9 +42,9 @@ I've seen some cases where running node-debug causes a socket error. This seems 
 
 **Acknowledgements**
 
-[Danny Coates] (https://github.com/dannycoates) for the excellent work on node-inspector
-[Franček Prijatelj] (https://github.com/fprijate) for his paperboy patch
+- [Danny Coates] (https://github.com/dannycoates) for the excellent work on node-inspector
+- [Franček Prijatelj] (https://github.com/fprijate) for his paperboy patch
 
 **License**
-node-inspector-windows is licensed under Apache 2.
-paperboy is licensed under the "Debuggable Limited license" (see LICENSE.PAPERBOY.txt)
+- node-inspector-windows is licensed under Apache 2.
+- paperboy is licensed under the "Debuggable Limited license" (see LICENSE.PAPERBOY.txt)
