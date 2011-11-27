@@ -26,9 +26,8 @@ Tool for getting node-inspector working on windows and for simplifying the proce
 **Using**
 
 - node-debug [-c] [-p PORT]
--c will run coffee app.coffee in debug mode otherwise 
--p will start node-inspector on the provided port.
-
+  -c will run coffee app.coffee in debug mode otherwise 
+  -p will start node-inspector on the provided port.
 - In the command window, go to the folder where the node app you want to debug is.
 - Type node-debug
 
