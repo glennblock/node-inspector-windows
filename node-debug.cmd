@@ -7,5 +7,5 @@ if exist "%NODE_INSPECTOR%\environmentvars.bat" (
     start "" "cmd" "/k node --debug-brk app.js" 
 )
 
-start "" %NODE_INSPECTOR_BROWSER% "http://localhost:8080"
-echo start "" %NODE_INSPECTOR_BROWSER% "%1%"
+start "" "%NODE_INSPECTOR_BROWSER%" "http://localhost:8080"
+echo start "" "%NODE_INSPECTOR_BROWSER%" "%1%"
