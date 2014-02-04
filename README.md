@@ -15,27 +15,26 @@ Tool for getting node-inspector working on windows and for simplifying the proce
 - Windows
 - [Latest npm build for windows] (http://npmjs.org/doc/README.html#Installing-on-Windows-Experimental)
 
-
 **Installation**
 
 - From the command window launch install.cmd. This will install node-inspector via npm and apply the paperboy patch described [here] (https://github.com/dannycoates/node-inspector/issues/62#issuecomment-1998429) to get node-inspector working on windows.
 - From the start menu right click on Computer->Properties->Advanced Computer Settings->Environment variables. 
   -	Create 2 system variables 
     - set NODE_INSPECTOR to the folder where this repo is located i.e. "c:\node-inspector"
-    - set NODE_INSPECTOR_BROWSER to the path of your webkit browser of choice i.e. Chrome, Safari. For example right clicking on Chrome on my machine gives me “C:\Users\gblock\AppData\Local\Google\Chrome\Application\chrome.exe”
 -	Add %NODE_INSPECTOR% to your path.
 
 **Using**
 
+- node-debug [-c] [-p PORT]
+  -c will run coffee app.coffee in debug mode otherwise 
+  -p will start node-inspector on the provided port.
 - In the command window, go to the folder where the node app you want to debug is.
-- Type node-debug [url] e.g. node-debug http://localhost:3000
+- Type node-debug
 
 Once you run it from the app folder it will:
 
 -	Launch node inspector
--	Launch you app in debug mode. 
--	Open the browser you specified and launch the debugger ui.
--	Launch the start url you specified.
+-	Launch your app in debug mode. (either through `node` or `coffee` depending on the `-c` switch)
 
 **Known issues**
 I've seen some cases where running node-debug causes a socket error. This seems to happen periodically. Closing the command windows and starting again seems to clear it.
